@@ -1,13 +1,11 @@
 
 package Main.spisokDel;
 
-import Main.spisokDel.model.Purpose;
+import Main.spisokDel.repository.model.Purpose;
 import Main.spisokDel.service.PurposeServiceImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.*;
 
 @RestController
 public class PurposeController {

@@ -1,7 +1,6 @@
 package Main.spisokDel;
 
-import Main.spisokDel.model.Purpose;
-import Main.spisokDel.repository.PurposeRepository;
+import Main.spisokDel.repository.model.Purpose;
 import Main.spisokDel.service.PurposeServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

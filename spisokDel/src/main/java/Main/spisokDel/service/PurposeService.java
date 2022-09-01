@@ -1,6 +1,6 @@
 package Main.spisokDel.service;
 
-import Main.spisokDel.model.Purpose;
+import Main.spisokDel.repository.model.Purpose;
 
 import java.util.List;
 

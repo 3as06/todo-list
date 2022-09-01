@@ -1,6 +1,6 @@
 package Main.spisokDel.repository;
 
-import Main.spisokDel.model.Purpose;
+import Main.spisokDel.repository.model.Purpose;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import org.springframework.data.jpa.repository.Query;

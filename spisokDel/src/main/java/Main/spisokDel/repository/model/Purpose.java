@@ -1,4 +1,4 @@
-package Main.spisokDel.model;
+package Main.spisokDel.repository.model;
 
 import javax.persistence.*;
 import java.util.Date;
