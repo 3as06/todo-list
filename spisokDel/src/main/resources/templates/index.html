@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Purpose List</title>
+    <script src="/js/jquery-3.4.0.min.js"></script>
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div id="purpose-form">
+
+        <form>
+            <h2>Добавление задачи</h2>
+            <label>Название задачи:</label>
+            <input type="text" name="name" value="">
+            <label>Дедлайн:</label>
+            <input type="date" name="deadLine" value="">
+            <hr>
+            <button id="save-purpose">Сохранить</button>
+        </form>
+    </div>
+    <h1>Список задач (<span th:text="${purposesCount}">0</span>)</h1>
+    <button id="show-add-purpose-form">Добавить задачу</button>
+    <br><br>
+    <div id="purpose-list">
+        <div th:each="purpose : ${purposes}">
+            <a href="#" class="purpose-link" th:attr="data-id=${purpose.id}" th:text="${purpose.name}"></a>
+        </div>
+    </div>
+    <!--<p th:text="${someParameter}"></p>-->
+</body>
+</html>
